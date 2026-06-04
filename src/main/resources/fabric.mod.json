@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "toggleable-clouds",
+  "version": "${version}",
+  "name": "Toggleable Clouds",
+  "description": "A mod which adds a hotkey that toggles clouds on and off.",
+  "authors": [
+    "Ayydxn"
+  ],
+  "contributors": [
+    "Colonal",
+    "DarcyEloiseArt"
+  ],
+  "contact": {
+    "homepage": "https://legacy.curseforge.com/minecraft/mc-mods/toggleable-clouds",
+    "issues": "https://legacy.curseforge.com/minecraft/mc-mods/toggleable-clouds/issues",
+    "sources": "https://www.fiverr.com/ayydxn"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/toggleable-clouds/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.ayydxn.toggleableclouds.ToggleableCloudsClientMod"
+    ]
+  },
+  "mixins": [
+    "toggleable-clouds.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=${minecraft_version}",
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*"
+  }
+}

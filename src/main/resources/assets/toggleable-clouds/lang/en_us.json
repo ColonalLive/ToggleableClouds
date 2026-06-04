@@ -1,0 +1,10 @@
+{
+  "key.category.toggleable-clouds.toggleable_clouds": "Toggleable Clouds",
+
+  "key.toggleable-clouds.toggle_clouds": "Toggle Clouds",
+  "key.toggleable-clouds.toggle_clouds.enabled": "Clouds have been enabled!",
+  "key.toggleable-clouds.toggle_clouds.disabled": "Clouds have been disabled!",
+
+  "yacl3.config.toggleable-clouds:toggleable_clouds_config.category.Toggleable Clouds": "Toggleable Clouds",
+  "yacl3.config.toggleable-clouds:toggleable_clouds_config.preferredCloudStatus": "Preferred Cloud Status"
+}
