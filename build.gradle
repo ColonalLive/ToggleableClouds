@@ -1,5 +1,5 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version '1.15-SNAPSHOT'
+    id 'net.fabricmc.fabric-loom' version '1.17-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -36,20 +36,22 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    implementation "maven.modrinth:yacl:3.9.0+26.1-fabric"
-    include "maven.modrinth:yacl:3.9.0+26.1-fabric"
+    implementation "maven.modrinth:yacl:${project.yacl_version}"
+    include "maven.modrinth:yacl:${project.yacl_version}"
 }
 
 processResources {
     inputs.property "version", project.version
     inputs.property "minecraft_version", project.minecraft_version
     inputs.property "loader_version", project.loader_version
+    inputs.property "yacl_version", project.yacl_version
     filteringCharset "UTF-8"
 
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
                 "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+                "loader_version": project.loader_version,
+                "yacl_version": project.yacl_version
     }
 }
 

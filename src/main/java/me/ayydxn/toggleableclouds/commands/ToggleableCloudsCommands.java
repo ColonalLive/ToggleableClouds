@@ -18,7 +18,7 @@ public class ToggleableCloudsCommands implements ClientCommandRegistrationCallba
         commandDispatcher.register(ClientCommands.literal("toggleable-clouds").then(ClientCommands.literal("config").executes(context ->
         {
             Minecraft client = context.getSource().getClient();
-            client.execute(() -> client.setScreen(ToggleableCloudsConfig.HANDLER.generateGui().generateScreen(null)));
+            client.execute(() -> client.setScreenAndShow(ToggleableCloudsConfig.HANDLER.generateGui().generateScreen(null)));
 
             return Command.SINGLE_SUCCESS;
         })));
