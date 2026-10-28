@@ -11,7 +11,6 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
-import org.lwjgl.glfw.GLFW;
 
 public class KeyInputHandler
 {
@@ -27,8 +26,8 @@ public class KeyInputHandler
     {
         toggleCloudsKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 KEY_TOGGLE_CLOUDS,
-                InputConstants.Type.KEYSYM,
-                GLFW.GLFW_KEY_R,
+                InputConstants.Type.KEYBOARD,
+                InputConstants.KEY_R,
                 TOGGLEABLE_CLOUDS_CATEGORY)
         );
 

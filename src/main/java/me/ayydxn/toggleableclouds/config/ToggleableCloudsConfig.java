@@ -2,7 +2,6 @@ package me.ayydxn.toggleableclouds.config;
 
 import dev.isxander.yacl3.api.NameableEnum;
 import dev.isxander.yacl3.config.v2.api.ConfigClassHandler;
-import dev.isxander.yacl3.config.v2.api.SerialEntry;
 import dev.isxander.yacl3.config.v2.api.autogen.AutoGen;
 import dev.isxander.yacl3.config.v2.api.autogen.CustomDescription;
 import dev.isxander.yacl3.config.v2.api.autogen.EnumCycler;
